@@ -1,0 +1,271 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rahul Singh Portfolio</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f5f5f5;
+}
+
+/* Navbar */
+
+header{
+background:#111;
+color:white;
+padding:15px 40px;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+nav ul{
+list-style:none;
+display:flex;
+}
+
+nav ul li{
+margin-left:20px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-size:16px;
+}
+
+/* Hero Section */
+
+.hero{
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+background:#222;
+color:white;
+text-align:center;
+}
+
+.hero span{
+color:#00adb5;
+}
+
+.hero button{
+margin-top:20px;
+padding:10px 25px;
+border:none;
+background:#00adb5;
+color:white;
+cursor:pointer;
+border-radius:5px;
+}
+
+/* Sections */
+
+section{
+padding:60px 40px;
+text-align:center;
+}
+
+h2{
+margin-bottom:20px;
+}
+
+/* Skills */
+
+.skills-container{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:15px;
+}
+
+.skill{
+background:#00adb5;
+color:white;
+padding:10px 20px;
+border-radius:5px;
+}
+
+/* Projects */
+
+.projects-container{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:20px;
+}
+
+.project{
+background:white;
+padding:20px;
+width:250px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+border-radius:5px;
+}
+
+/* Contact */
+
+.contact form{
+display:flex;
+flex-direction:column;
+max-width:400px;
+margin:auto;
+}
+
+.contact input,
+.contact textarea{
+margin:10px 0;
+padding:10px;
+}
+
+.contact button{
+padding:10px;
+background:#00adb5;
+color:white;
+border:none;
+cursor:pointer;
+}
+
+/* Footer */
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:15px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<h2>Rahul Singh</h2>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+</header>
+
+
+<section id="home" class="hero">
+<h1>Hello I'm <span>Rahul Singh</span></h1>
+<p>Full Stack Developer | MERN Stack</p>
+
+<button onclick="scrollToContact()">Hire Me</button>
+</section>
+
+
+<section id="about">
+<h2>About Me</h2>
+
+<p>
+I am a passionate Full Stack Developer skilled in building web applications
+using the MERN stack. I enjoy solving problems using Data Structures and
+Algorithms and building scalable systems.
+</p>
+
+</section>
+
+
+<section id="skills">
+
+<h2>Skills</h2>
+
+<div class="skills-container">
+
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">React</div>
+<div class="skill">Node.js</div>
+<div class="skill">MongoDB</div>
+
+</div>
+
+</section>
+
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="projects-container">
+
+<div class="project">
+<h3>Social Media App</h3>
+<p>MERN stack app with like and comment functionality.</p>
+</div>
+
+<div class="project">
+<h3>Automatic Timetable Generator</h3>
+<p>Python based Genetic Algorithm timetable system.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="contact" class="contact">
+
+<h2>Contact Me</h2>
+
+<form>
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Your Email" required>
+
+<textarea placeholder="Your Message"></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</section>
+
+
+<footer>
+<p>© 2026 Rahul Singh | Portfolio</p>
+</footer>
+
+
+<script>
+
+function scrollToContact(){
+document.getElementById("contact").scrollIntoView({
+behavior:"smooth"
+});
+}
+
+</script>
+
+</body>
+</html>
+```
